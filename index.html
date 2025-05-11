@@ -147,12 +147,7 @@ a:hover {
                 <li>WhatsApp: <a href="https://wa.me/6282140000113" target="_blank">+62-821-4000-0113</a></li>
                 <li>Website: <a href="https://cs-ajaib-id.netlify.app" target="_blank">https://cs-ajaib-id.netlify.app</a></li>
             </ul>
-<!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
-<script src="https://static.elfsight.com/platform/platform.js" async></script>
-<div class="elfsight-app-048d5f40-2c6e-4c8f-9cff-9766cbbe2bbd" data-elfsight-app-lazy></div>
-        </div>
     </div>
-
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     
@@ -165,6 +160,42 @@ a:hover {
                 console.log('Menu clicked:', this.textContent.trim());
             });
         });
+    </script><script>
+                var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?98579';
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = url;
+                var options = {
+                "enabled":true,
+                "chatButtonSetting":{
+                    "backgroundColor":"#00e785",
+                    "ctaText":"Chat whatsapp admin",
+                    "borderRadius":"25",
+                    "marginLeft": "0",
+                    "marginRight": "20",
+                    "marginBottom": "20",
+                    "ctaIconWATI":true,
+                    "position":"right"
+                },
+                "brandSetting":{
+                    "brandName":"Ajaib",
+                    "brandSubTitle":"undefined",
+                    "brandImg":"https://www.wati.io/wp-content/uploads/2023/04/Wati-logo.svg",
+                    "welcomeText":"Halo Investor! Selamat datang di Customer Service Ajaib,?",
+                    "messageText":"Hello,%0A Saya Ingin Menanyakan tentang Ajaib",
+                    "backgroundColor":"#00e785",
+                    "ctaText":"Chat whatsapp admin",
+                    "borderRadius":"25",
+                    "autoShow":false,
+                    "phoneNumber":"6282140000113"
+                }
+                };
+                s.onload = function() {
+                    CreateWhatsappChatWidget(options);
+                };
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
     </script>
 </body>
 </html>
